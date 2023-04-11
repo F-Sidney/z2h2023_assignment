@@ -1,0 +1,194 @@
+{
+  "address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "VERSION",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_num",
+          "type": "uint256"
+        }
+      ],
+      "name": "addValueV2",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_initValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "initialized",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_num",
+          "type": "uint256"
+        }
+      ],
+      "name": "reduceValueV2",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_newValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "setValue",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_newValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "setValueV2",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "value",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "valueV2",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x7d890b653ad0e0b6406ab705b0f4b9f31419141c4fdcaf00acefe0861b85bb57",
+  "receipt": {
+    "to": null,
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "contractAddress": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+    "transactionIndex": 0,
+    "gasUsed": "203779",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xedb4324e9303ab52b68177c756315ca3beb60de4a25e5f7e58e815102a91914f",
+    "transactionHash": "0x7d890b653ad0e0b6406ab705b0f4b9f31419141c4fdcaf00acefe0861b85bb57",
+    "logs": [],
+    "blockNumber": 5,
+    "cumulativeGasUsed": "203779",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 2,
+  "solcInputHash": "4b9fd33528c6e0f616323ae826ce5f13",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.18+commit.87f61d96\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"VERSION\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_num\",\"type\":\"uint256\"}],\"name\":\"addValueV2\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_initValue\",\"type\":\"uint256\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"initialized\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_num\",\"type\":\"uint256\"}],\"name\":\"reduceValueV2\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_newValue\",\"type\":\"uint256\"}],\"name\":\"setValue\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_newValue\",\"type\":\"uint256\"}],\"name\":\"setValueV2\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"value\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"valueV2\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/NXFImpl.sol\":\"NXFImpl\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/NXFImpl.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\n\\r\\npragma solidity ^0.8.10;\\r\\n\\r\\ncontract NXFImpl {\\r\\n    uint256 public constant VERSION = 2;\\r\\n\\r\\n    bool public initialized;\\r\\n\\r\\n    uint256 public value;\\r\\n    uint256 public valueV2;\\r\\n\\r\\n    modifier initializer() {\\r\\n        require(!initialized, \\\"Only initialize once\\\");\\r\\n        _;\\r\\n        initialized = true;\\r\\n    }\\r\\n\\r\\n    function initialize(uint256 _initValue) public initializer {\\r\\n        value = _initValue;\\r\\n        valueV2 = _initValue;\\r\\n    }\\r\\n\\r\\n    function setValue(uint256 _newValue) public {\\r\\n        value = _newValue + 10;\\r\\n    }\\r\\n\\r\\n    function setValueV2(uint256 _newValue) public {\\r\\n        valueV2 = _newValue;\\r\\n    }\\r\\n\\r\\n    function addValueV2(uint256 _num) public {\\r\\n        valueV2 = valueV2 + _num;\\r\\n    }\\r\\n\\r\\n    function reduceValueV2(uint256 _num) public {\\r\\n        require(valueV2 >= _num, \\\"Insufficient amount!\\\");\\r\\n        valueV2 = valueV2 - _num;\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x0c597538639150561e7be178dc35f235794f35ce8f735a09bc67a1be5828eebf\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506102b9806100206000396000f3fe608060405234801561001057600080fd5b50600436106100935760003560e01c8063a385ad5a11610066578063a385ad5a146100ef578063b8a8d00814610102578063f81bfabb14610115578063fe4b84df14610128578063ffa1ad741461013b57600080fd5b8063158ef93e146100985780633fa4f245146100ba57806355241077146100d15780637a3d7e5c146100e6575b600080fd5b6000546100a59060ff1681565b60405190151581526020015b60405180910390f35b6100c360015481565b6040519081526020016100b1565b6100e46100df366004610228565b610143565b005b6100c360025481565b6100e46100fd366004610228565b610154565b6100e4610110366004610228565b600255565b6100e4610123366004610228565b6101b6565b6100e4610136366004610228565b6101c4565b6100c3600281565b61014e81600a610257565b60015550565b8060025410156101a25760405162461bcd60e51b8152602060048201526014602482015273496e73756666696369656e7420616d6f756e742160601b60448201526064015b60405180910390fd5b806002546101b09190610270565b60025550565b806002546101b09190610257565b60005460ff161561020e5760405162461bcd60e51b81526020600482015260146024820152734f6e6c7920696e697469616c697a65206f6e636560601b6044820152606401610199565b60018181556002919091556000805460ff19169091179055565b60006020828403121561023a57600080fd5b5035919050565b634e487b7160e01b600052601160045260246000fd5b8082018082111561026a5761026a610241565b92915050565b8181038181111561026a5761026a61024156fea2646970667358221220aea338aa3e58965b69444e195b01904e90a4b29d8385e00d8640bba2687fa1cc64736f6c63430008120033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100935760003560e01c8063a385ad5a11610066578063a385ad5a146100ef578063b8a8d00814610102578063f81bfabb14610115578063fe4b84df14610128578063ffa1ad741461013b57600080fd5b8063158ef93e146100985780633fa4f245146100ba57806355241077146100d15780637a3d7e5c146100e6575b600080fd5b6000546100a59060ff1681565b60405190151581526020015b60405180910390f35b6100c360015481565b6040519081526020016100b1565b6100e46100df366004610228565b610143565b005b6100c360025481565b6100e46100fd366004610228565b610154565b6100e4610110366004610228565b600255565b6100e4610123366004610228565b6101b6565b6100e4610136366004610228565b6101c4565b6100c3600281565b61014e81600a610257565b60015550565b8060025410156101a25760405162461bcd60e51b8152602060048201526014602482015273496e73756666696369656e7420616d6f756e742160601b60448201526064015b60405180910390fd5b806002546101b09190610270565b60025550565b806002546101b09190610257565b60005460ff161561020e5760405162461bcd60e51b81526020600482015260146024820152734f6e6c7920696e697469616c697a65206f6e636560601b6044820152606401610199565b60018181556002919091556000805460ff19169091179055565b60006020828403121561023a57600080fd5b5035919050565b634e487b7160e01b600052601160045260246000fd5b8082018082111561026a5761026a610241565b92915050565b8181038181111561026a5761026a61024156fea2646970667358221220aea338aa3e58965b69444e195b01904e90a4b29d8385e00d8640bba2687fa1cc64736f6c63430008120033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 6,
+        "contract": "contracts/NXFImpl.sol:NXFImpl",
+        "label": "initialized",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 8,
+        "contract": "contracts/NXFImpl.sol:NXFImpl",
+        "label": "value",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 10,
+        "contract": "contracts/NXFImpl.sol:NXFImpl",
+        "label": "valueV2",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

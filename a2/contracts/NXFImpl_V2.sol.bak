@@ -1,0 +1,40 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.10;
+
+contract NXFImpl {
+    uint256 public constant VERSION = 2;
+
+    bool public initialized;
+
+    uint256 public value;
+    uint256 public valueV2;
+
+    modifier initializer() {
+        require(!initialized, "Only initialize once");
+        _;
+        initialized = true;
+    }
+
+    function initialize(uint256 _initValue) public initializer {
+        value = _initValue;
+        valueV2 = _initValue;
+    }
+
+    function setValue(uint256 _newValue) public {
+        value = _newValue + 10;
+    }
+
+    function setValueV2(uint256 _newValue) public {
+        valueV2 = _newValue;
+    }
+
+    function addValueV2(uint256 _num) public {
+        valueV2 = valueV2 + _num;
+    }
+
+    function reduceValueV2(uint256 _num) public {
+        require(valueV2 >= _num, "Insufficient amount!");
+        valueV2 = valueV2 - _num;
+    }
+}
