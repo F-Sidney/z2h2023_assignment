@@ -1,4 +1,4 @@
-# Assignment 2 for Week4 class
+# Assignment 2 for Week4 class -- upgradable contract
 
 Note: 
 Create your own ".env" file based on the ".env.example" file.
