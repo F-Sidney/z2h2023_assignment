@@ -274,3 +274,70 @@ reference: https://forum.openzeppelin.com/t/verify-upgrades-plugins-proxy-on-eth
 ```bash
 npx hardhat verify --network bnbtest 0x04DC987a1AEF3AeCE68B20aF610088B93B3f080C --constructor-args arguments/proxyarguments.js
 ```
+
+update:
+Add FunctionSignature.sol contract to generate the calldata
+start local node (will automatically deploy the FunctionSignature.sol)
+```bash
+npx hardhat node
+```
+if you want modify the contract, and deploy to local node manually: 
+```bash
+npx hardhat deploy --network localhost --tags FunctionSignature
+```
+get calldata:
+```bash
+npx hardhat getCallData --network localhost 
+ ```
+the output:
+```log
+getCallData:  0xfe4b84df0000000000000000000000000000000000000000000000000000000000000001
+call raw data hexstring:  0xfe4b84df0000000000000000000000000000000000000000000000000000000000000001
+```
+then modify the "arguments/proxyarguments.js" content like this:
+```json
+module.exports = [
+    //logic address
+    "0x7e751122c05600FEe73508A5128BdA44b53FB640",
+    //admin address
+    "0xBeeB2994F1C3d7fdAB33A84a850ebb5d550cE763",
+    //data
+    "0xfe4b84df0000000000000000000000000000000000000000000000000000000000000001",
+  ];
+```
+
+verify again:
+```bash
+npx hardhat verify --network bnbtest 0x04DC987a1AEF3AeCE68B20aF610088B93B3f080C --constructor-args arguments/proxyarguments.js --show-stack-traces
+```
+
+but still failed, full log:
+```log
+PS D:\code\Blockchain\Zero2Hero\z2h2023_assignment\a2> npx hardhat verify --network bnbtest 0x04DC987a1AEF3AeCE68B20aF610088B93B3f080C --constructor-args arguments/proxyarguments.js --show-stack-traces
+Nothing to compile
+No need to generate any newer typings.
+Successfully submitted source code for contract
+@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:TransparentUpgradeableProxy at 0x04DC987a1AEF3AeCE68B20aF610088B93B3f080C
+for verification on the block explorer. Waiting for verification result...
+
+We tried verifying your contract TransparentUpgradeableProxy without including any unrelated one, but it failed.
+Trying again with the full solc input used to compile and deploy it.
+This means that unrelated contracts may be displayed on Etherscan...
+
+Successfully submitted source code for contract
+@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:TransparentUpgradeableProxy at 0x04DC987a1AEF3AeCE68B20aF610088B93B3f080C
+for verification on the block explorer. Waiting for verification result...
+
+Error in plugin @nomiclabs/hardhat-etherscan: The contract verification failed.
+Reason: Fail - Unable to verify
+
+NomicLabsHardhatPluginError: The contract verification failed.
+Reason: Fail - Unable to verify
+    at SimpleTaskDefinition.verifySubtask [as action] (D:\code\Blockchain\Zero2Hero\z2h2023_assignment\a2\node_modules\@nomiclabs\hardhat-etherscan\src\index.ts:375:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Environment._runTaskDefinition (D:\code\Blockchain\Zero2Hero\z2h2023_assignment\a2\node_modules\hardhat\src\internal\core\runtime-environment.ts:330:14)
+    at async Environment.run (D:\code\Blockchain\Zero2Hero\z2h2023_assignment\a2\node_modules\hardhat\src\internal\core\runtime-environment.ts:163:14)
+    at async Environment._runTaskDefinition (D:\code\Blockchain\Zero2Hero\z2h2023_assignment\a2\node_modules\hardhat\src\internal\core\runtime-environment.ts:330:14)
+    at async Environment.run (D:\code\Blockchain\Zero2Hero\z2h2023_assignment\a2\node_modules\hardhat\src\internal\core\runtime-environment.ts:163:14)
+    at async main (D:\code\Blockchain\Zero2Hero\z2h2023_assignment\a2\node_modules\hardhat\src\internal\cli\cli.ts:277:7)
+```

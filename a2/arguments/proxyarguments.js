@@ -8,5 +8,5 @@ module.exports = [
     //admin address
     "0xBeeB2994F1C3d7fdAB33A84a850ebb5d550cE763",
     //data
-    0,
+    "0xfe4b84df0000000000000000000000000000000000000000000000000000000000000001",
   ];
